@@ -1,0 +1,54 @@
+.header {
+    height: 230px;
+    background-color: #1974d2;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    z-index: 0;
+}
+
+.header__avatar {
+    width: 271px;
+    height: auto;
+    margin: -90px 79px 146px 152px;
+    border-radius: 18px;
+    border: solid 0.1px #fff;
+    z-index: 1000;
+}
+
+.header__info {
+    color: white;
+    font-family: Roboto;
+    padding-top: 90px;
+    padding-left: 484px;
+
+}
+
+.header__info__name {
+    font-size: 40px;
+}
+
+.header__info__position {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.main {
+    font-family: Roboto;
+    margin-top: 200px;
+}
+
+.main__title {
+    color: #1974d2;
+}
+
+.contact_icon {
+    height: 15px;
+    width: auto;
+}
+
+.footer {
+    color: #696464;
+    font-family: Roboto;
+    text-align: center;
+}
