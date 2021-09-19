@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Примеры Кода</title>
+</head>
+<body>
+    <p>Я неплохо пишу код :)</p>
+    <pre>
+        <code>
+            import { NotFoundException, UseGuards } from '@nestjs/common';
+            import { Args, Mutation, Resolver } from '@nestjs/graphql';
+
+            import { isAdmin } from '../../../common/checks/isAdmin';
+            import { GraphqlAuthGuard } from '../../../common/guards/graphqlAuth.guard';
+            import { UserGuard } from '../../../common/guards/user.guard';
+            import { UserService } from '../../user/database/user.service';
+            import { AuthCommonService } from '../common/authCommon.service';
+            import { UserTokensService } from '../database/userTokens.service';
+            import { AuthResponseType } from './authResponse.type';
+
+            @Resolver()
+            export class AuthMutationResolver {
+                constructor(
+                private readonly users: UserService,
+                private readonly userTokens: UserTokensService,
+                private readonly auth: AuthCommonService,
+                ) {}
+
+                /**
+                * Выполняет аутентификацию с использованием почты и пароля
+                */
+                @Mutation(() => AuthResponseType)
+                async login(
+                    @Args('email') email: string,
+                    @Args('password') password: string,
+                ): Promise&lt;AuthResponseType&gt; {
+                    const user = await this.users.checkUserCredentials(email, password);
+
+                    return await this.auth.generateResponse(user);
+                }
+
+                /**
+                * Использует рефреш-токен для получения нового access-токена
+                */
+                @Mutation(() => AuthResponseType)
+                async useRefreshToken(
+                    @Args('token') token: string,
+                ): Promise&lt;AuthResponseType&gt; {
+                    const user = await this.userTokens.getAccessToken(token);
+
+                    return await this.auth.generateResponse(user);
+                }
+
+                /**
+                * Выходит из аккаунта
+                */
+                @Mutation(() => Boolean)
+                async logout(@Args('token') token: string): Promise&lt;boolean&gt; {
+                    const user = await this.auth.logout(token);
+
+                    return !!user;
+                }
+            }
+        </code>
+    </pre>
+</body>
+</html>
