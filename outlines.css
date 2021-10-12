@@ -11,6 +11,10 @@ body {
     z-index: 0;
 }
 
+h2 {
+    white-space: pre;
+}
+
 .header__nav__link {
     color: white;
     font-weight: bold;
