@@ -49,6 +49,8 @@ h5 {
 }
 
 .header__info__position {
+    font-family: "Arial Black";
+    line-height: 16px;
     font-size: 12px;
     margin-top: -20px;
 }
