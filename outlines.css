@@ -33,7 +33,7 @@ h2 {
     border-radius: 18px;
     border: solid 0.1px #fff;
     z-index: 1000;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 10px 5px 5px black;
 }
 
 .header__info {
