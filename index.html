@@ -2,10 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta
-        name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta
         name="description"
         content="Резюме Backend разработчика на Node.JS"
@@ -21,112 +18,119 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <section class="header__info">
-            <h1 class="header__info__name">
-                Муслимов Ойбек
-            </h1>
-            <p class="header__info__position">
-                Backend Node.JS Developer
-            </p>
+    <div class="main-container">
+        <header>
+            <div class="header__background"></div>
 
-            <nav>
-                <a class="header__nav__link" href="#aboutMe">О себе</a>
-                <a class="header__nav__link" href="#contacts">Контакты</a>
-                <a class="header__nav__link" href="#experience">Опыт работы</a>
-                <a class="header__nav__link" href="#education">Образование</a>
-                <a class="header__nav__link" href="code-examples.html">Примеры кода</a>
-                <a class="header__nav__link" href="#offtop">Оффотоп</a>
-            </nav>
-        </section>
+            <div class="header__content">
+                <img src="assets/avatar.jpg" class="header__avatar" alt="Моя аватарка"/>
 
-        <img src="assets/avatar.jpg" class="header__avatar" alt="Моя аватарка"/>
-    </header>
+                <section class="header__info">
+                    <h1 class="header__info__name">
+                        Муслимов Ойбек
+                    </h1>
+                    <p class="header__info__position">
+                        Backend Node.JS Developer
+                    </p>
 
-    <main>
-        <!-- О себе -->
-        <section id="aboutMe">
-            <h2>О себе</h2>
-
-            <p>
-                Знаком с Docker, стандартными алгоритмами и понимаю асимптотическую сложность вычислений. Имею опыт работы (всегда их придерживаюсь) с принципами ООП и паттернами проектирования. Также имею опыт продуктовой разработки.<br>
-                Люблю решать интересные задачи и изучать что-то новое (Как работает технология X). Увлекаюсь стартапами, хочу создать свой.<br>
-                <br>
-                Общительный и дружелюбный:)<br>
-                <br>
-                Для связи предпочитаю Telegram: <a href="https://t.me/oybekmuslimov" target="_blank">@oybekmuslimov</a>
-            </p>
-        </section>
-
-        <!-- Контакты -->
-        <section id="contacts">
-            <h2> Контакты </h2>
-
-            <div>
-                <img src="assets/icons/email.svg" alt="Иконка электронной почты" class="contact__icon"/>
-                <a class="contact__link" href="mailto:oybekmuslimov15@gmail.com">oybekmuslimov15@gmail.com</a>
+                    <nav class="header__nav">
+                        <a class="header__nav__link" href="#aboutMe">О себе</a>
+                        <a class="header__nav__link" href="#contacts">Контакты</a>
+                        <a class="header__nav__link" href="#experience">Опыт работы</a>
+                        <a class="header__nav__link" href="#education">Образование</a>
+                        <a class="header__nav__link" href="code-examples.html">Примеры кода</a>
+                        <a class="header__nav__link" href="#offtop">Оффотоп</a>
+                    </nav>
+                </section>
             </div>
-            
-            <div>
-                <img src="assets/icons/phone-call.svg" alt="Иконка телефона" class="contact__icon">
-                <a href="tel:+79185338901">+7 (918) 533-89-01</a>
-            </div>
+        </header>
 
-            <div>
-                <img src="assets/icons/telegram.svg" alt="Иконка Телеграмма" class="contact__icon"/>
-                <a href="https://t.me/oybekmuslimov" target="_blank">@oybekmuslimov</a>
-            </div>
+        <main>
+            <div class="gorizontal-container">
+                <!-- О себе -->
+                <section id="aboutMe">
+                    <h2>О себе</h2>
 
-            <div>
-                <img src="assets/icons/github-icon.png" alt="Иконка Гитхаба" class="contact__icon">
-                <a href="https://github.com/kebyo" target="_blank">@kebyo</a>
-            </div>
-        </section>
+                    <p>
+                        Знаком с Docker, стандартными алгоритмами и понимаю асимптотическую сложность вычислений. Имею опыт работы (всегда их придерживаюсь) с принципами ООП и паттернами проектирования. Также имею опыт продуктовой разработки.<br>
+                        Люблю решать интересные задачи и изучать что-то новое (Как работает технология X). Увлекаюсь стартапами, хочу создать свой.<br>
+                        <br>
+                        Общительный и дружелюбный:)<br>
+                        <br>
+                        Для связи предпочитаю Telegram: <a href="https://t.me/oybekmuslimov" target="_blank">@oybekmuslimov</a>
+                    </p>
+                </section>
 
-        <!-- Опыт работы -->
-        <section id="experience">
-            <h2> Опыт работы </h2>
-        </section>
+                <!-- Контакты -->
+                <section id="contacts">
+                    <h2> Контакты </h2>
 
-        <!-- Образование -->
-        <section id="education">
-            <h2> Образование </h2>
+                    <div>
+                        <img src="assets/icons/email.svg" alt="Иконка электронной почты" class="contact__icon"/>
+                        <a class="contact__link" href="mailto:oybekmuslimov15@gmail.com">oybekmuslimov15@gmail.com</a>
+                    </div>
 
-        </section>
+                    <div>
+                        <img src="assets/icons/phone-call.svg" alt="Иконка телефона" class="contact__icon">
+                        <a href="tel:+79185338901">+7 (918) 533-89-01</a>
+                    </div>
 
-        <!-- Скиллы -->
-        <section id="skills">
-            <h2> Скиллы </h2>
-        </section>
+                    <div>
+                        <img src="assets/icons/telegram.svg" alt="Иконка Телеграмма" class="contact__icon"/>
+                        <a href="https://t.me/oybekmuslimov" target="_blank">@oybekmuslimov</a>
+                    </div>
 
-        <!-- Результаты -->
-        <section id="results">
-            <h2>Результаты</h2>
-
-            <div>
-                <p>Плюсы: </p>
-                <ul>
-                    <li>Получил базовые знания по сетям</li>
-                    <li>Написал много REST API, API с WebSocket и еще GraphQL API (Обожаю GraphQL)</li>
-                    <li>Поработал с воркерами, очередями и кэшированием</li>
-                    <li>Знания по бд и sql серьезно апнулись))</li>
-                    <li>Похудел на 8 кг 😎</li>
-                </ul>
+                    <div>
+                        <img src="assets/icons/github-icon.png" alt="Иконка Гитхаба" class="contact__icon">
+                        <a href="https://github.com/kebyo" target="_blank">@kebyo</a>
+                    </div>
+                </section>
             </div>
 
-            <div>
-                <p>Минусы: </p>
-                <ul>
-                    <li>Наверное их нет...</li>
-                </ul>
-            </div>
-        </section>
+            <!-- Опыт работы -->
+            <section id="experience">
+                <h2> Опыт работы </h2>
+            </section>
 
-        <!-- Оффтоп -->
-        <section id="offtop">
-            <h2>Небольшой оффтопчик))</h2>
+            <!-- Образование -->
+            <section id="education">
+                <h2> Образование </h2>
 
-            <pre>
+            </section>
+
+            <!-- Скиллы -->
+            <section id="skills">
+                <h2> Скиллы </h2>
+            </section>
+
+            <!-- Результаты -->
+            <section id="results">
+                <h2>Результаты</h2>
+
+                <div>
+                    <p>Плюсы: </p>
+                    <ul>
+                        <li>Получил базовые знания по сетям</li>
+                        <li>Написал много REST API, API с WebSocket и еще GraphQL API (Обожаю GraphQL)</li>
+                        <li>Поработал с воркерами, очередями и кэшированием</li>
+                        <li>Знания по бд и sql серьезно апнулись))</li>
+                        <li>Похудел на 8 кг 😎</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p>Минусы: </p>
+                    <ul>
+                        <li>Наверное их нет...</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Оффтоп -->
+            <section id="offtop">
+                <h2>Небольшой оффтопчик))</h2>
+
+                <pre>
             ┈╭━━━━━━━━━━━╮
             ╭╯┈╭━━╮┈╭━━╮┈╰╮
             ┃┈┃┃╭╮┃┈┃╭╮┃┃┈┃
@@ -136,27 +140,28 @@
             ┈┃┈╰━━━┫┃┣━╯┈┃
             ┈┃┈┈┈┈┈╰━╯┈┈┈┃
             </pre>
-            <article>
-                Еще я люблю животных. В частности собак. Если у вас в офисе будет какой-нибудь песик,
-                то я ним подружусь. В детстве у меня была собака по кличке Альфа и я катался на ней верхом.
-                Но не бойтесь, я на вашей собаке не собираюсь ездить верхом, наверное...
-            </article>
+                <article>
+                    Еще я люблю животных. В частности собак. Если у вас в офисе будет какой-нибудь песик,
+                    то я ним подружусь. В детстве у меня была собака по кличке Альфа и я катался на ней верхом.
+                    Но не бойтесь, я на вашей собаке не собираюсь ездить верхом, наверное...
+                </article>
 
-            <article>
-                <p>Еще я нашел смешную цитату про успешный успех!:</p><br>
+                <article>
+                    <p>Еще я нашел смешную цитату про успешный успех!:</p><br>
 
-                <blockquote>
-                    <p>"Сначала Карнеги попробовал себя в бизнесе, но не преуспел. Тогда ему пришла неожиданная и оригинальная идея: учить других бизнесменов, как добиться успеха"</p>
+                    <blockquote>
+                        <p>"Сначала Карнеги попробовал себя в бизнесе, но не преуспел. Тогда ему пришла неожиданная и оригинальная идея: учить других бизнесменов, как добиться успеха"</p>
 
-                    <cite>
-                        <a href="https://citaty.info/topic/uspeh/smeshnye-citaty">Источник цитаты</a>
-                    </cite>
-                </blockquote>
-            </article>
-        </section>
-    </main>
+                        <cite>
+                            <a href="https://citaty.info/topic/uspeh/smeshnye-citaty">Источник цитаты</a>
+                        </cite>
+                    </blockquote>
+                </article>
+            </section>
+        </main>
+    </div>
 
-    <footer class="footer">
+    <footer>
         Resume created by Oybek Muslimov at <time datetime="2021-09-19">19.09.2021</time>
     </footer>
 </body>
