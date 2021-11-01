@@ -50,7 +50,7 @@ h2 {
 }
 
 .header__info {
-    margin-left: 150px;
+    margin-left: 200px;
     color: white;
     padding-top: 90px;
 
@@ -87,6 +87,7 @@ main {
 
 #contacts {
     display: inline-block;
+    margin-left: 150px;
 }
 
 a {
@@ -180,6 +181,10 @@ tbody tr:hover {
 @media screen and (max-width: 1259px) {
     .header__content {
         flex-direction: column;
+    }
+
+    #contacts {
+        margin-left: 0;
     }
 
     .header__info {
