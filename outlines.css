@@ -86,8 +86,11 @@ main {
 }
 
 #contacts {
+    position: sticky;
+    top: 0;
     display: inline-block;
     margin-left: 150px;
+    align-self: flex-start;
 }
 
 a {
@@ -108,9 +111,8 @@ footer {
     text-align: center;
 }
 
-.main-container{
-    display: flex;
-    flex-direction: column;
+.main-container {
+    margin: auto;
     justify-content: center;
     width: 80%;
 }
@@ -121,39 +123,38 @@ footer {
     width: 100%;
 }
 
-#random-table {
-    width: 100%;
-    margin-bottom: 30px;
+.random-table {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border-top: 1px solid black;
+    border-right: 1px solid black;
 }
 
-table {
-    width: 100%;
-    box-shadow: 10px 5px 5px black;
-    border-collapse: collapse;
+.random-table__header {
+    font-weight: bold;
 }
 
-table, th, td {
-    text-align: center;
-    padding: 10px;
+.grid-row-wrapper {
+    display: contents;
 }
 
-th {
-    background-color: #1974d2;
-    color: white;
+.grid-row-wrapper > span {
+    padding: 8px 4px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
-tbody th:nth-child(odd) {
+.grid-row-wrapper span:nth-child(odd) {
     background-color: dodgerblue;
 }
 
-tbody tr:nth-child(even) {
-    background-color: gainsboro;
+.grid-row-wrapper span:nth-child(even) {
+   background: gainsboro;
 }
 
-tbody tr:hover {
+.random-table span:hover {
     background-color: #7bb1ec;
 }
-
 
 @media screen and (max-width: 1000px) {
     .gorizontal-container {
@@ -180,6 +181,7 @@ tbody tr:hover {
 
 @media screen and (max-width: 1259px) {
     .header__content {
+        display: flex;
         flex-direction: column;
     }
 
@@ -201,12 +203,5 @@ tbody tr:hover {
 @media screen and (max-height: 200px) {
     footer {
         display: none
-    }
-}
-
-@media screen and (min-width: 1360px){
-    .main-container {
-        margin-right: calc(15% + 100px);;
-        margin-left: calc(15% + 100px);
     }
 }
