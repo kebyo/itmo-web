@@ -3,10 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Примеры Кода</title>
+    <script src="js/timer.js"></script>
+    <script defer src="js/header-nav.js"></script>
+    <link rel="stylesheet" href="outlines.css"/>
 </head>
 <body>
-    <p>Я неплохо пишу код :)</p>
-    <pre>
+<header>
+    <div class="header__background"></div>
+
+    <div class="header__content">
+        <section class="header__info">
+            <nav class="header__nav">
+                <a id="main-page-btn" class="header__nav__link" href="/itmo-web/">Главная</a>
+                <a id="code-examples-btn" class="header__nav__link" href="/itmo-web/code-examples.html">Примеры кода</a>
+            </nav>
+        </section>
+    </div>
+</header>
+    <main>
+        <p>Я неплохо пишу код :)</p>
+        <pre>
         <code>
             import { NotFoundException, UseGuards } from '@nestjs/common';
             import { Args, Mutation, Resolver } from '@nestjs/graphql';
@@ -64,5 +80,6 @@
             }
         </code>
     </pre>
+    </main>
 </body>
 </html>
