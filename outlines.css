@@ -31,8 +31,8 @@ h2 {
 }
 
 .header__nav__page--current {
-    font-weight: bolder;
-    background: white;
+    font-weight: bolder !important;
+    background: blueviolet !important;
 }
 
 .header__nav__link {
