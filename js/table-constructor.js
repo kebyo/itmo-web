@@ -60,11 +60,9 @@ function onSaveTableClick() {
     for (const child of theadTr.children) {
         tableData.data[0].push(child.value);
     }
-
-
+    
     const tbody = document.querySelector('tbody');
     const children = tbody.children;
-
 
     for (let i = 0; i < children.length; i++) {
         tableData.data.push([]);
