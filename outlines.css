@@ -30,6 +30,11 @@ h2 {
     width: 100%;
 }
 
+.header__nav__page--current {
+    font-weight: bolder !important;
+    background: blueviolet !important;
+}
+
 .header__nav__link {
     color: white;
     font-weight: bold;
@@ -38,6 +43,10 @@ h2 {
     background-size: 10px;
     border-radius: 3px;
     text-decoration: none;
+}
+
+.header__nav__link:hover {
+    background: greenyellow;
 }
 
 .header__avatar {
