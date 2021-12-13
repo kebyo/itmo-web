@@ -37,17 +37,23 @@
         <section class="table-constructor">
             <form name="constructor_input">
                 <p>Высота</p>
-                <input name="height" value="2">
+                <input class="table-constructor__input" name="height" required>
+
                 <p>Ширина</p>
-                <input name="width" value="2">
-                <input type="button" value="Создать" onclick="onCreateTableClick()">
+                <input class="table-constructor__input" name="width" required>
+
+                <input type="button" value="Create" name="create" onclick="onCreateTableClick()">
             </form>
         </section>
 
-        <section>
-            <table>
-            </table>
+        <section class="table_section">
+            <template>
+                <table>
+                </table>
+            </template>
+        </section>
 
+        <section class="table_manager">
             <button name="save" onclick="onSaveTableClick()">Save</button>
             <button name="restore" onclick="onRestoreTableClick()">Restore</button>
         </section>
