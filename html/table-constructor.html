@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="../css/table-constructor.css"/>
+    <link rel="stylesheet" href="../css/outlines.css"/>
+    <title>Муслимов Ойбек М33041</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="../js/table-constructor.js"></script>
+</head>
+<body>
+<div class="main-container">
+    <header>
+        <div class="header__background"></div>
+
+        <div class="header__content">
+            <section class="header__info">
+                <h1 class="header__info__name">
+                    Муслимов Ойбек
+                </h1>
+                <p class="header__info__position">
+                    Backend Node.JS Developer
+                </p>
+
+                <nav class="header__nav">
+                    <a id="itmo-web" class="header__nav__link" href="/itmo-web/">Главная</a>
+                    <a id="code-examples.html" class="header__nav__link" href="code-examples.html">Примеры кода</a>
+                    <a id="table-constructor.html" class="header__nav__link" href="table-constructor.html">Конструктор таблиц</a>
+                </nav>
+            </section>
+        </div>
+    </header>
+    <main>
+        <section class="table-constructor">
+            <form name="constructor_input">
+                <p>Высота</p>
+                <input class="table-constructor__input" name="height" required>
+
+                <p>Ширина</p>
+                <input class="table-constructor__input" name="width" required>
+
+                <input class="button-util" type="button" value="Create" name="create" onclick="onCreateTableClick()">
+            </form>
+        </section>
+
+        <section class="table_section">
+            <template>
+                <table>
+                </table>
+            </template>
+        </section>
+
+        <section class="table_manager">
+            <button class="button-util" name="save" onclick="onSaveTableClick()">Save</button>
+            <button class="button-util" name="restore" onclick="onRestoreTableClick()">Restore</button>
+        </section>
+    </main>
+</div>
+
+</body>
+</html>
