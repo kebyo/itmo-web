@@ -20,7 +20,7 @@ th {
     outline: none !important;
 }
 
-button {
+.button-util {
    background-color: #f8f9fa;
    border: 1px solid #f8f9fa;
    border-radius: 4px;
@@ -32,13 +32,13 @@ button {
    text-align: center;
 }
 
-button:hover {
+.button-util:hover {
     border-color: #dadce0;
     box-shadow: rgba(0, 0, 0, .1) 0 1px 1px;
     color: #202124;
 }
 
-button:focus {
+.button-util:focus {
     border-color: #4285f4;
     outline: none;
 }
